@@ -8,12 +8,14 @@
 </head>
 <body>
     <h1>Welcome to IOtechExercise1 hihih </h1>
+    <div id="debug"></div>
     <script>
         fetch("./data/devices.json")
         .then(response => response.json())
-            .then(data => {
-                console.log(data)
-            })
+        .then(data => {
+            console.log(data)
+            document.querySelector('#debug').innerText = data.Devices
+        })
     </script>
 </body>
 </html>
