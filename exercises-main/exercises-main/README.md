@@ -15,3 +15,13 @@ Please write a program in the language of your choice (C or GO prefered) to comp
 - Reformat the data so that it satisfies the schema in `exercise-01/output-schema/schema.json`
 - Order the reformatted data by `Name` (ascending)
 - Write the reformatted data to a new file in `JSON` format
+
+
+
+
+How to run the program:
+
+- Download repository
+- Open it on Visual Studio 
+- Download the Live Server Extension 
+- Go into index.html right click and select open the Live Server

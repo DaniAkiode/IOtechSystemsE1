@@ -7,14 +7,27 @@
     <title>IOtechExercise</title>
 </head>
 <body>
-    <h1>Welcome to IOtechExercise1 hihih </h1>
-    <div id="debug"></div>
+    <h1>Welcome to IOtechExercise1 </h1>
+    <div id="d0"></div>  
+    <div id="d1"></div>  
+    <div id="d2"></div>  
+    <div id="d3"></div>  
+    <div id="d4"></div>  
     <script>
         fetch("./data/devices.json")
         .then(response => response.json())
         .then(data => {
             console.log(data)
-            document.querySelector('#debug').innerText = data.Devices
+            console.log(data.Devices[0].Info)
+            console.log(data.Devices[0].Sensors)
+
+            document.querySelector('#d0').innerText = data.Devices[0].Info
+            document.querySelector('#d1').innerText = data.Devices[1].Info
+            document.querySelector('#d2').innerText = data.Devices[2].Info
+            document.querySelector('#d3').innerText = data.Devices[3].Info
+            document.querySelector('#d4').innerText = data.Devices[4].Info
+
+
         })
     </script>
 </body>
